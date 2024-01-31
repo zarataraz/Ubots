@@ -2,7 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 
-const moviecontrollers = require('../controlers/moviecontrollers');
+const moviecontrollers = require('../controllers/moviecontrollers');
 const tratativasDeRntrada = require('../middlewares/tratativasDeEntrada');
 
 

@@ -1,0 +1,31 @@
+
+{
+  "database": {
+    "1706609017990": {
+      "host": "127.0.0.1",
+      "port": 3306,
+      "user": "root",
+      "password": "1234",
+      "dbType": "MySQL",
+      "advance": {
+        "hideSystemSchema": true
+      },
+      "timezone": "+00:00",
+      "usingSSH": false,
+      "useSocksProxy": false,
+      "useHTTPProxy": false,
+      "global": true,
+      "savePassword": "Forever",
+      "readonly": false,
+      "useSSL": false,
+      "fs": {
+        "showHidden": true
+      },
+      "key": "1706609017990",
+      "connectionKey": "database.connections",
+      "sort": 11
+    }
+  },
+  "nosql": null,
+  "$schema": "http://127.0.0.1:8828/schema.json"
+}

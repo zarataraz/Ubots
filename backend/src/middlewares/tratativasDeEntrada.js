@@ -16,7 +16,11 @@ const validacaoAvaliacao = (request, response, next) => {
     const { body } = request;
 
 
-    if (body.avaliacao === undefined) {
+    if (body.avaliacao == undefined) {
+        body.avaliacao = null
+        next();
+    };
+    if (body.avaliacao == '') {
         body.avaliacao = null
         next();
     };
@@ -25,10 +29,10 @@ const validacaoAvaliacao = (request, response, next) => {
     }
     if (body.avaliacao > 10) {
         return response.status(400).json({ message: 'o campo "avaliacao" não pode ser maior que 10' });
-    }
 
     next();
 
+}
 }
 
 
